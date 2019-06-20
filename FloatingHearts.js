@@ -145,7 +145,7 @@ class AnimatedShape extends Component {
         this.rendered = true;
 
         const height = Math.ceil(this.props.height);
-        const negativeHeight = height * -1;
+        const negativeHeight = height * -1 * 2;
         const shapeHeight = e.nativeEvent.layout.height;
 
         this.yAnimation = this.state.position.interpolate({
